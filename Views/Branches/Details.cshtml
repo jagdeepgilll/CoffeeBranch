@@ -1,0 +1,30 @@
+﻿@model CoffeeBranch.Models.Branch
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="text-align:center">Details</h1>
+
+<div>
+    <h4 style="text-align:center">Branch</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2"  style="font-family:cursive;background-color:blanchedalmond;">
+            @Html.DisplayNameFor(model => model.Branch_Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Branch_Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Branch_Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Branch_Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
