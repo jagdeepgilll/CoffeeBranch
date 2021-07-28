@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CoffeeBranch.Data;
 using CoffeeBranch.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoffeeBranch.Controllers
 {
+    [Authorize]
     public class MenusController : Controller
     {
         private readonly CoffeeDbContext _context;
