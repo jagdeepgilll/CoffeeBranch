@@ -14,7 +14,7 @@ namespace CoffeeBranch.Models
         public string Branch_Name { get; set; }
         //Address of the Branch
         public string Branch_Address { get; set; }
-        public ICollection<Menu> Menus { get; set; } // 1 to many relation , linking to booking model
-        public ICollection<Order> Orders { get; set; } // 1 person have many results, linking to result model
+        public ICollection<Menu> Menus { get; set; } // 1 to many relation
+        public ICollection<Order> Orders { get; set; } // 1 person have many orders
     }
 }

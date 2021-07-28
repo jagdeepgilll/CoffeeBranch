@@ -17,8 +17,8 @@ namespace CoffeeBranch.Models
         
         //Price of the coffee
         public int Price { get; set; }
-        public FlavourType? FlavourType { get; set; }//TestType
-        public int BranchId { get; set; }
+        public FlavourType? FlavourType { get; set; }//FlavourType
+        public int BranchId { get; set; }//BranchID
         public Branch Branch { get; set; } //Linking
     }
 }
